@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.slider-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 80px;
+  position: relative;
+  justify-content: center;
+  height: 100vh;
+}
+
+.slider-wrapper {
+  position: absolute;
+  opacity: 0;
+
+}
+
+.slider-item {
+  background-color: grey;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-btn {
+  position: relative;
+  width: 600px;
+}
+
+.slider-btn .btn {
+  cursor: pointer;
+  position: absolute;
+  top: 140px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slider-btn .left {
+  left: 30px;
+}
+
+.slider-btn .right {
+  right: 30px !important;
+}
+
+.active {
+  opacity: 1;
+}
+
+.dots {
+  display: flex;
+  position: absolute;
+  bottom: 40%;
+  gap: 30px;
+}
+
+.dots div {
+  cursor: pointer;
+}
